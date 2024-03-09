@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UTAS Tour Distance Finder</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>UTAS Tour Distance</h1>
+    <select id="city1" class="custom-select my-2">
+        <option value="26.1828201,56.2375022">Musandam</option>
+        <option value="24.7999632,56.426667">Shinas</option>
+        <option value="24.293838,56.7796236">Sohar</option>
+        <option value="23.7431743,57.5753479">Musannah</option>
+        <option value="23.4774619,57.4490708">Rustaq</option>
+        <option value="23.5890724,58.4203324">Muscat</option>
+        <option value="22.5628929,59.4689542">Sur</option>
+        <option value="22.77637,58.4908176">Ibra</option>
+        <option value="23.2423895,56.4005216">Ibri</option>
+        <option value="22.890267,57.5534627">Nizwa</option>
+        <option value="17.0472691,54.1401155">Salalah</option>
+    </select>
+    <select id="city2" class="custom-select my-2">
+        <option value="26.1828201,56.2375022">Musandam</option>
+        <option value="24.7999632,56.426667">Shinas</option>
+        <option value="24.293838,56.7796236">Sohar</option>
+        <option value="23.7431743,57.5753479">Musannah</option>
+        <option value="23.4774619,57.4490708">Rustaq</option>
+        <option value="23.5890724,58.4203324">Muscat</option>
+        <option value="22.5628929,59.4689542">Sur</option>
+        <option value="22.77637,58.4908176">Ibra</option>
+        <option value="23.2423895,56.4005216">Ibri</option>
+        <option value="22.890267,57.5534627">Nizwa</option>
+        <option value="17.0472691,54.1401155">Salalah</option>    
+    </select>
+    <button id="findDistance" class="btn btn-primary my-2">Find Distance</button>
+    <div id="output" class="alert alert-light" role="alert"></div>
+    <div id="map" style="height: 500px;"></div>
+</div>
+
+   <!-- Sticky footer -->
+   <footer class="footer">
+    <div class="container">
+      <span>&copy; 2024 UTAS Tour Distance Finder</span>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+<!-- Include Google Maps JavaScript API -->
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AkfNI165uWAhymGyttAyyNYcVZ2JGWFlYbBVuH8iM6Z44WyCkGlyhd6yWbzC8Zah&callback=loadMapScenario' async defer></script>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+/* Add additional styles if needed */
+#map {
+    height: 500px; /* Increased height of the map */
+}
+
+body {
+    padding-bottom: 60px; /* Add padding to make room for the sticky footer */
+}
+
+.footer {
+    background-color: #f5f5f5; /* Footer background color, change as needed */
+    padding: 20px 0; /* Footer padding */
+    text-align: center; /* Center the footer content */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Fix footer height if needed or make it auto to wrap content */
+    height: 60px; 
+}
